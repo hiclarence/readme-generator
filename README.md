@@ -1,5 +1,5 @@
 # Professional README Generator 
-The purpose of this code is to create a README generator using Node JS. Users will be presnted a series of prompt on the command line interface. 
+The purpose of this code is to create a README generator using Node JS. Users will be presented a series of prompt on the command line interface. 
 
 This code will query the user for : 
 - The title
