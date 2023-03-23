@@ -1,10 +1,29 @@
+const fs = require('fs');
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  
+  switch (license) {
+    case 'Apache License 2.0': 
+      return ('https://img.shields.io/badge/License-Apache_2.0-blue.svg'); 
+      break;
+    case 'Creative Commons Attribution 4.0': 
+      return ('https://img.shields.io/badge/License-Apache_2.0-blue.svg'); 
+      break;
+    case 'MIT': 
+      return ('https://img.shields.io/badge/License-MIT-yellow.svg'); 
+      break;
+    default: 
+      return ' '
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -17,4 +36,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = { generateMarkdown, renderLicenseBadge } ;
