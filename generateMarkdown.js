@@ -1,7 +1,6 @@
 const fs = require('fs');
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Create a function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
   
   switch (license) {
@@ -9,7 +8,7 @@ function renderLicenseBadge(license) {
       return ('https://img.shields.io/badge/License-Apache_2.0-blue.svg'); 
       break;
     case 'Creative Commons Attribution 4.0': 
-      return ('https://img.shields.io/badge/License-Apache_2.0-blue.svg'); 
+      return ('https://licensebuttons.net/l/by/4.0/80x15.png'); 
       break;
     case 'MIT': 
       return ('https://img.shields.io/badge/License-MIT-yellow.svg'); 
@@ -19,8 +18,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Create a function that returns the license link
 function renderLicenseLink(license) {
   switch (license) {
     case 'Apache License 2.0': 
@@ -38,7 +36,6 @@ function renderLicenseLink(license) {
 }
 
 // TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   switch (license) {
     case 'Apache License 2.0': 
@@ -55,24 +52,24 @@ function renderLicenseSection(license) {
   }
 }
 
-
-// TODO: Create a function to generate markdown for README
+// Create a function to generate markdown for README
 function generateMarkdown(data) {
 return `
   
 # ${data.title}
+
 ![${data.licenseChoice}](${renderLicenseBadge(data.licenseChoice)})
 
 ## Description
 ${data.description}
 
 ## Table of Contents 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Questions](#Questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation 
 ${data.installation}
@@ -92,7 +89,7 @@ ${data.contributionGuidelines}
 ${data.testInstructions}
   
 ## Questions
-You may reach me at my email: ${data.emailAddress} or my github: https://github.com/${data.githubName}`;
+You may reach me at my **email: ${data.emailAddress}** or my **github: https://github.com/${data.githubName}**`;
 }
 
 module.exports = { generateMarkdown } ;

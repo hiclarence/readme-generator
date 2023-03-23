@@ -78,10 +78,7 @@ inquirer
   },
 ])
 .then((data) =>
-  writeToFile('README1.md', data)
-  // response.confirm === response.password
-  //   ? console.log('Success!')
-  //   : console.log('You forgot your password already?!')
+  writeToFile('sampleREADME.md', data)
 );}
 
 // Function call to initialize app
