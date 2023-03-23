@@ -17,7 +17,13 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, generate.generateMarkdown(data), err => {
+    if (err) {
+      console.error(err);
+    }
+  });
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -72,13 +78,11 @@ inquirer
   },
 ])
 .then((data) =>
-  console.log(generate.renderLicenseBadge(data.licenseChoice))
+  writeToFile('README1.md', data)
   // response.confirm === response.password
   //   ? console.log('Success!')
   //   : console.log('You forgot your password already?!')
 );}
 
-
-// pass input to create a file
 // Function call to initialize app
 init();
