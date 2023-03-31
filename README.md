@@ -10,7 +10,9 @@ This code will query the user for :
 - Tests
 - Further Questions
 
-The badge of the license will show near the title of the README.
+The badge of the license will show near the title of the README. 
+
+Video Recording: https://www.loom.com/share/acc99f039e184d468631f6705b365aa9
 
 
 ## Languages Used

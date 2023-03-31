@@ -1,11 +1,11 @@
 
   
-# ReadME Generator
+# sample README generator
 
-![Creative Commons Attribution 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)
+![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
 ## Description
-This creates README files
+this creates readme files
 
 ## Table of Contents 
 - [Installation](#installation)
@@ -16,21 +16,21 @@ This creates README files
 - [Questions](#questions)
 
 ## Installation 
-Run as is with npm inquirer
+install as is
 
 ## Usage
-Use as needed
+use wisely
 
 ## License
-Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+Apache License, Version 2.0 Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-https://creativecommons.org/licenses/by/4.0/
+https://opensource.org/licenses/Apache-2.0
 
 ## Contributing
-Contribute wisely
+contribute as needed
   
 ## Tests
-Test as desired
+test regularly
   
 ## Questions
 You may reach me at my **email: clarence@biteline.net** or my **github: https://github.com/hiclarence**
